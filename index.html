@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/gif" href="images/MGfabicon.gif">
+    <title>Mantis Girl</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            min-height:100svh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .logo{
+            height: 8.01vw;
+            width: 15vw;
+            min-height: 200px;
+            min-width: 300px;
+        }
+
+        main{
+            flex:1;
+            padding:30px 20px;
+            background-image: url("images/tile.jpg");
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .header{
+            color:#D9FE97;
+            text-align:center;
+            max-width:800px;
+            width:90%;
+            font-size:clamp(1.4rem,3vw,2.5rem);
+            font-weight: bolder;
+            margin-bottom:25px;
+            text-shadow:2px 2px 6px rgba(0,0,0,0.8);
+        }
+
+        .book-blocks{
+            width:90%;
+            max-width:750px;
+            display:flex;
+            flex-direction:column;
+            gap:40px;
+        }
+
+        .book-block{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+        }
+
+        .book-cover{
+            width:375px;
+            height:auto;
+        }
+
+        .book-desc{
+            flex:1;
+        }
+
+        .book-desc p{
+            color:#D6F993;
+            line-height:1.5;
+            font-size:clamp(1rem,1.5vw,1.2rem);
+            margin-bottom:30px;
+            font-weight: bold;
+        }
+
+        .buy-button{
+            background:#399195;
+            color:#FBFAF9;
+            border:none;
+            margin-top: 20px;
+            padding:10px 20px;
+            font-weight: bold;
+            font-size:1rem;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.25s;
+            text-decoration: none;
+        }
+        .buy-button:hover{
+            background:#317E82;
+        }
+
+        /* TABLET */
+        @media (max-width:900px){
+            .book-block{
+                flex-direction:column;
+                align-items:center;
+                text-align:center;
+            }
+            .book-cover{
+                width:350px;
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width:500px){
+            .header{
+                margin-bottom:35px;
+            }
+            .book-cover{
+                width:250px;
+            }
+            .buy-button{
+                width:100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+        <main>
+            <div class="main-content"></div>
+            <img src="images/kfgLogo.png" class="logo" alt="Logo">
+            <h1 class="header">AVAILABLE NOW ON APPLE BOOKS</h1>
+
+                <!-- books -->
+                <div class="book-blocks">
+                    <div class="book-block">
+                        <img src="images/kfgBook1.jpg" class="book-cover">
+                        <div class="book-desc">
+                            <p>
+                                Join Mei and her friends at a hidden girls-only kung fu academy high in the mountains. 
+                                Discover friendship, courage, and adventure as they train to become kung fu experts.
+                            </p>
+                            <a href="https://www.amazon.com/dp/B0GQP67BJ4" class="buy-button" target="_blank" rel="noopener">
+                                BUY NOW
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="book-block">
+                        <img src="images/kfgBook2.jpg" class="book-cover">
+                        <div class="book-desc">
+                            <p>
+                                Book 2: Mr. Mantis shows the way A trip to Whispering Spring leads Mei on a magical adventure with Mr. Mantis as her guide.
+                            </p>
+                            <a  href="https://www.amazon.com/dp/B0GZ6STWFM" class="buy-button" target="_blank" rel="noopener" >
+                                BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+</body>
+</html>
