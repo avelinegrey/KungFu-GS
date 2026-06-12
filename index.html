@@ -37,10 +37,11 @@
         main{
             flex:1;
             padding:30px 20px;
-            background-image: url("images/Tile.jpg");
             display:flex;
             flex-direction:column;
             align-items:center;
+            background-image: url("images/Tile.jpg");
+            background-repeat: repeat;
         }
 
         .header{
@@ -117,6 +118,9 @@
 
         /* MOBILE */
         @media (max-width:500px){
+            .body{
+                min-height: 100dvh;
+            }
             .header{
                 margin-bottom:35px;
             }
